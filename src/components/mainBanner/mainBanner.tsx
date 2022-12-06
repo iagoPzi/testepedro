@@ -35,15 +35,22 @@ const Container = styled.section``;
 const HeroContainer = styled.div`
   background: url("/images/heroBanner.webp") center;
   background-size: cover;
-  height: 36rem;
+  min-height: 36rem;
+  height: 100%;
+  width: 100%;
 
-  /* display: grid;
-  align-items: center; */
+  @media (max-width: 980px) {
+    background: #12bce2;
+  }
 `;
 
 const Hero = styled.img`
   width: 100%;
   display: none;
+
+  @media (max-width: 980px) {
+    display: block;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -52,8 +59,15 @@ const TextContainer = styled.div`
     rgba(233, 247, 250, 1) 40%,
     rgba(0, 0, 0, 0) 60%
   );
-  height: 100%;
+  min-height: 36rem;
   display: grid;
+
+  @media (max-width: 980px) {
+    background: #ebf9fc;
+    min-height: 10rem;
+    padding: 1rem 0;
+  }
+
 `;
 
 const TextWrapper = styled.div`
