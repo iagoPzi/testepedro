@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <Container>
-        <ContainerWrapper>
+        <InnerContainer>
           <Logo href="#">
             <Image
               src="/linusHealthLogo.svg"
@@ -31,7 +31,7 @@ const Header = () => {
             <RequestInfoButton href="/">Request info</RequestInfoButton>
           </MenuWrapper>
           {/* <NavigationLink /> */}
-        </ContainerWrapper>
+        </InnerContainer>
       </Container>
     </>
   );
@@ -45,7 +45,7 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-const ContainerWrapper = styled.div`
+const InnerContainer = styled.div`
   width: 1180px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -57,6 +57,8 @@ const ContainerWrapper = styled.div`
 const Logo = styled.a`
   display: grid;
 `;
+
+
 
 const NavLink = styled.div`
   ul {
@@ -72,6 +74,8 @@ const NavLink = styled.div`
   }
 `;
 
+
+
 const MenuWrapper = styled.div`
   margin-left: auto;
   display: flex;
@@ -82,6 +86,8 @@ const MenuWrapper = styled.div`
     display: none;
   }
 `;
+
+
 
 const RequestInfoButton = styled(Link)`
   background: #87c65b;
