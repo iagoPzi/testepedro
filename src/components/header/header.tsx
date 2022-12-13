@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import NavigationLink from "./navigationLink/navigationLink";
+import NavigationLink from "./navigationMenu/navigationLink";
+import NavigationMenu from "./navigationMenu/navigationMenu";
 
 const Header = () => {
   return (
@@ -18,12 +19,13 @@ const Header = () => {
           </Logo>
 
           <NavLink>
-            <ul>
+            <NavigationMenu />
+            {/* <ul>
               <li>Our Approach</li>
               <li>Solutions</li>
               <li>Resources</li>
               <li>Company</li>
-            </ul>
+            </ul> */}
           </NavLink>
 
           <MenuWrapper>
