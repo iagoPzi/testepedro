@@ -4,12 +4,12 @@ import styled from "styled-components";
 
 interface NavigationItemProps {
   title: string;
-  subMenuLinks: [
+  subMenuLinks:
     {
       link: string;
       name: string;
-    }
-  ];
+    }[]
+;
 }
 
 const NavigationItem = ({ title, subMenuLinks }: NavigationItemProps) => {
