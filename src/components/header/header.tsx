@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import MenuHamburguer from "./menuHamburguer/menuHamburguer";
 import NavigationLink from "./navigationMenu/navigationLink";
 import NavigationMenu from "./navigationMenu/navigationMenu";
 
@@ -27,6 +28,7 @@ const Header = () => {
               <li>Company</li>
             </ul> */}
           </NavLink>
+          <MenuHamburguer />
 
           <MenuWrapper>
             <Link href="/">Sign in</Link>

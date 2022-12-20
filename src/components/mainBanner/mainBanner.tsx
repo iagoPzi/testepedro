@@ -59,6 +59,8 @@ const TextContainer = styled.div`
     rgba(233, 247, 250, 1) 40%,
     rgba(0, 0, 0, 0) 60%
   );
+
+  /* background: linear-gradient(90deg,#e9f7fb 60%,hsla(0,0%,100%,0)); */
   min-height: 36rem;
   display: grid;
 
